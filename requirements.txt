@@ -1,0 +1,65 @@
+annotated-types==0.7.0          # Provides additional type annotations, enhancing code readability
+anyio==4.6.2.post1              # Asynchronous networking and concurrency library, required by some async functions
+blinker==1.8.2                  # Enables signal/event handling, often used by Flask for real-time notifications
+blis==1.0.1                     # Optimized math functions, often used by NLP libraries like spaCy
+catalogue==2.0.10               # Lightweight library for registering functions by name, used in spaCy pipelines
+certifi==2024.8.30              # Provides SSL certificates, enhancing secure HTTP connections
+charset-normalizer==3.4.0       # Detects character encoding in text files, used with HTTP requests
+click==8.1.7                    # Command-line interface toolkit, enables robust CLI commands in Flask
+cloudpathlib==0.20.0            # Enables working with cloud storage paths, managing file access in the cloud
+colorama==0.4.6                 # Adds color to terminal output, improving CLI readability
+confection==0.1.5               # Used for configuration management in Python, often by spaCy
+cymem==2.0.8                    # Memory management utility, used by spaCy for efficient NLP processing
+distro==1.9.0                   # Linux distribution information, often used in platform-specific configurations
+en_core_web_sm                  # Small English NLP model for spaCy, useful for text analysis and entity recognition
+Flask==3.0.3                    # Lightweight web framework, used for building the web interface
+h11==0.14.0                     # HTTP/1.1 networking protocol, used in asynchronous networking for HTTP requests
+httpcore==1.0.6                 # Low-level HTTP client library for handling HTTP requests, used by HTTPX
+httpx==0.27.2                   # Async HTTP client, used for calling external APIs (e.g., NVIDIA API)
+idna==3.10                      # Handles internationalized domain names in URLs
+itsdangerous==2.2.0             # Provides cryptographic signatures, used by Flask for secure session management
+Jinja2==3.1.4                   # Templating engine for Flask, used to render dynamic HTML pages
+jiter==0.7.0                    # Library for managing API requests with delays, useful for throttling
+joblib==1.4.2                   # Parallel processing library, used for efficient execution of NLP and data tasks
+langcodes==3.4.1                # Handles language code standards, used in language processing
+language_data==1.2.0            # Data for language models, used by NLP libraries
+lxml==5.3.0                     # XML and HTML processing library, useful for data extraction
+marisa-trie==1.2.1              # Fast and memory-efficient trie data structure, often used in NLP tasks
+markdown-it-py==3.0.0           # Markdown parser, useful if Markdown text is processed
+MarkupSafe==3.0.2               # Prevents code injection attacks, used in Jinja2 for safe templating
+mdurl==0.1.2                    # Parses and processes URLs, typically used with Markdown libraries
+murmurhash==1.0.10              # Hash function used in NLP tasks, such as in spaCy
+nltk==3.9.1                     # Natural Language Toolkit, provides utilities for text processing and analysis
+numpy==2.0.2                    # Numerical computing library, used for mathematical operations and data processing
+openai==1.54.3                  # OpenAI API client, adapted to use NVIDIA embeddings for text similarity
+packaging==24.1                 # Standardizes package versioning and dependency management
+preshed==3.0.9                  # Lightweight hash table, used in NLP for storing word vectors
+pydantic==2.9.2                 # Data validation and settings management, used for structured configurations
+pydantic_core==2.23.4           # Core validation engine for Pydantic, ensures data integrity
+Pygments==2.18.0                # Syntax highlighting for code, enhances text display in rich output
+PyPDF2==3.0.1                   # PDF text extraction, used to process resume and job descriptions in PDF format
+python-docx==1.1.2              # DOCX text extraction, used for processing resumes in DOCX format
+python-dotenv==1.0.1            # Loads environment variables from .env file, such as API keys
+regex==2024.9.11                # Extended regular expressions, useful for advanced text manipulation
+requests==2.32.3                # Simplified HTTP library, alternative to HTTPX
+rich==13.9.4                    # Rich-text formatting, used for enhanced CLI display
+scikit-learn==1.5.2             # Machine learning library, used for model evaluation and data preprocessing
+scipy==1.14.1                   # Scientific computing library, provides additional algorithms for data processing
+setuptools==75.3.0              # Package installation and distribution utilities for Python
+shellingham==1.5.4              # Detects shell environment, used in CLI configurations
+smart-open==7.0.5               # Handles large file reads and cloud storage, useful for data loading
+sniffio==1.3.1                  # Async context management, used with asynchronous libraries like HTTPX
+spacy==3.8.2                    # NLP library, provides tools for text analysis, tokenization, and embeddings
+spacy-legacy==3.0.12            # Maintains compatibility with older versions of spaCy
+spacy-loggers==1.0.5            # Provides logging utilities for spaCy, aiding in debugging
+srsly==2.4.8                    # Serialization library, used by spaCy for model storage
+thinc==8.3.2                    # Neural network library, serves as a backend for spaCy’s deep learning models
+threadpoolctl==3.5.0            # Controls thread pools, optimizes resource usage in multi-threaded environments
+tqdm==4.66.6                    # Progress bar for Python, used to show progress in tasks like data loading
+typer==0.12.5                   # CLI framework, provides command-line interfaces for Python scripts
+typing_extensions==4.12.2       # Provides type annotations, extends typing for older Python versions
+urllib3==2.2.3                  # HTTP library, used by requests for network operations
+wasabi==1.1.3                   # Lightweight logger, often used in NLP workflows
+weasel==0.4.1                   # Configurable API request retrier, provides retry mechanisms for API calls
+Werkzeug==3.1.2                 # WSGI utility library, core of Flask’s routing and error handling
+wrapt==1.16.0                   # Provides decorators for function wrapping, enhances modular design in Python

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Launchpad</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <h1>Career Launchpad</h1>
+    <h2>Job Application Tracker with Resume Feedback</h2>
+
+    <form id="applicationForm">
+        <label for="company">Company:</label><br>
+        <input type="text" id="company" name="company" required><br><br>
+
+        <label for="job_title">Job Title:</label><br>
+        <input type="text" id="job_title" name="job_title" required><br><br>
+
+        <label for="job_description">Job Description:</label><br>
+        <textarea id="job_description" name="job_description" rows="5" required></textarea><br><br>
+
+        <label for="resume_text">Resume Text:</label><br>
+        <textarea id="resume_text" name="resume_text" rows="5"></textarea><br><br>
+
+        <label for="resume_file">Upload Resume (TXT, PDF, DOCX):</label><br>
+        <input type="file" id="resume_file" name="resume_file" accept=".txt, .pdf, .docx"><br><br>
+
+        <button type="submit">Submit Application</button>
+        <button type="button" onclick="clearForm()">Clear Form</button>
+    </form>
+
+    <!-- Display Response Section -->
+    <div id="response" style="margin-top: 20px;">
+        <h3>Match Score:</h3>
+        <div id="match-score"></div>
+
+        <h4>Feedback:</h4>
+        <div id="feedback"></div>
+
+        <h4>Detailed Suggestions:</h4>
+        <div id="suggestions"></div>
+
+        <!-- Chat Interface -->
+        <div id="chat-interface" style="display: none;">
+            <div id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
